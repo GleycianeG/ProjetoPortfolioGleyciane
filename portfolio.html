@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/177cfcb5b9.js" crossorigin="anonymous"></script>
+    <title>Portfólio Gleyciane</title>
+</head>
+<body>
+   <header> 
+
+    <div class="logo">
+        <img src="logo.png" alt="Logo.GleycianeG">
+    
+    </div>
+    <ul>
+        
+        <li>
+            <i class="fa-brands fa-github"> </i> <a target="_blank" href="https://github.com/GleycianeG"> GitHub </a> 
+        </li>
+
+        <li>            
+            <i class="fa-brands fa-instagram"></i> <a target="_blank" href="https://www.instagram.com/gleycianeg/">Instagram</a>
+        </li>
+        
+        <li>
+            <i class="fa-brands fa-whatsapp"></i> <a target="_blank" href="https://wa.me/67984126566">Whatsapp</a>
+        </li>
+        
+    </ul>
+
+   </header>
+   <main>
+    <section class="container">
+        <div class="name">
+            <h1> Gleyciane Gonçalves</h1>
+            <h3> Software Developer</h3>    
+            <br> </br>
+
+        </div>
+
+        
+
+        <div onclick="displayAbout()" class="arrow">   
+            <i id="animation"  class="fa-sharp fa-solid fa-caret-down"> </i>
+        </div>
+        <br> </br>
+
+        <div style="display: none;" id="about"> 
+            <img src="Perfil2.jpg">
+            <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae dolor aut assumenda quis dignissimos ipsam blanditiis, nemo ducimus quos vitae. Earum exercitationem consectetur facere blanditiis quis. Dignissimos exercitationem veritatis amet!</p>
+        </div>
+        <br> </br>
+        <br> </br>
+
+        <div  class="flex">
+            
+            <div>
+                <img src="css.png" alt="CSS">
+                <p> <strong> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, nobis. Voluptas alias ab eum aut, id dolorum quibusdam blanditiis in nulla culpa temporibus expedita odit et. Ex, impedit. Cupiditate, rerum.</strong> </p>
+            </div>
+            
+            <div> 
+                <img src="html.png" alt="HTML">
+                <p> <strong> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, nobis. Voluptas alias ab eum aut, id dolorum quibusdam blanditiis in nulla culpa temporibus expedita odit et. Ex, impedit. Cupiditate, rerum.</strong> </p>
+            </div>
+
+            <div>
+                <img src="JS.png" alt="JAVASCRIPT">
+                <p> <strong> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, nobis. Voluptas alias ab eum aut, id dolorum quibusdam blanditiis in nulla culpa temporibus expedita odit et. Ex, impedit. Cupiditate, rerum.</strong> </p>
+            </div>    
+
+            <div>
+                <img src="git.png" alt="Git">
+                <p> <strong> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, nobis. Voluptas alias ab eum aut, id dolorum quibusdam blanditiis in nulla culpa temporibus expedita odit et. Ex, impedit. Cupiditate, rerum.</strong> </p>
+            </div>    
+
+            <br> </br>
+
+         </section>
+
+
+
+        <br> </br>
+    
+        <div class="form">
+            <div>
+                <p>Deixe seu contato :) </p>
+            </div>
+       
+            <form action="" >
+                <input type="text" placeholder="Digite seu Email">
+                <button>Enviar! </button>
+                <br> </br>
+            </form>
+        </div>
+
+        <br> </br>
+
+      
+       </section>
+       </main>
+
+       <script>
+        function displayAbout() {
+            var arrow = document.getElementById('animation')
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about')
+            display.classList.toggle('active');
+        }
+       </script>
+    
+</body>
+</html>

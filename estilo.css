@@ -1,0 +1,159 @@
+*{
+   padding: 0;
+   margin:0;
+   box-sizing: border-box;
+   color: #a09038;
+   font-family: 'Roboto Condensed';
+   text-align: center;
+   }
+
+ul {
+    justify-content:space-evenly;
+    align-items: center;
+    align-content: space-between;
+
+
+    margin: 20px;
+    display: flex;
+    list-style: none;
+    font-size: 20px;
+    font-style: italic;
+
+    }
+
+a{
+    text-decoration: none;
+}
+
+body{
+background-image: url(background2.png);
+background-repeat:no-repeat;
+background-position:center;
+background-size: cover;
+background-attachment: fixed;
+}
+
+header {
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 10px;
+   border-bottom: 1px solid #a09038;
+    box-shadow: 1px 1px 10px 1px #cecece76;
+    border-bottom: 15px ridge #cecece76;
+
+}
+
+header ul li{
+    display: flex;
+    padding: 5px;
+    border-bottom: 3px dashed #cecece76;
+
+}
+
+header ul li a{
+transition: 400ms;
+}
+
+header ul li a:hover{
+    color:#cecece76;
+    text-decoration: underline;
+}
+
+img {
+    width: 250px;
+    margin: 25px;
+}
+
+.container .name h1 {
+    font-size: 50px;
+   
+}
+.container .name h3 {
+    font-size: 30px;
+}
+
+.arrow {
+    font-size: 45px;
+    cursor: pointer;
+    animation: blink 1s steps(5, start) infinite;
+}
+
+@keyframes blink {
+    to{
+        visibility: hidden;
+    }
+}
+
+.animation {
+    transition: 300ms;
+
+}
+
+.rotate {
+    transform:rotate(180deg);
+    transition: 300ms;
+}
+
+.active {
+    display: block !important;
+}
+    
+#about p {
+max-width: 600px;
+margin: 0 auto;
+
+}
+
+.form {
+    width: 40%;
+    margin:0 auto;
+    border: thick double #cecece76;
+    padding: 25px;
+
+}
+
+.form input {
+       width: 50%;
+       padding: 5px 10px;
+       border: none;
+       border-radius: 5px 0px 0px 5px;
+}
+
+.form button {
+width: 15%;
+padding: 5px 10px;
+background-color: #cecece76;
+color:#a09038;
+font-weight: 600;
+border:none;
+cursor: pointer;
+border-radius: 0px 5px 5px 0px;
+margin-left: -5px;
+margin-top: 20px;
+}
+
+.form button:hover {
+    background-color: #a09038;
+    color: #cecece76;
+    transition: 300ms;
+}
+
+.flex {
+    display: flex;
+   
+}
+
+.flex div {
+border:2px solid white;
+margin:15px;
+flex-basis: 100%;
+background-color: #cecece76;
+border-radius: 5px;
+
+}
+
+#flex img {
+    max-width: 300px;
+}
+
